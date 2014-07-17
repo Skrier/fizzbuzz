@@ -9,7 +9,7 @@ $(document).ready(function (){
 	     
 	     var inputNumber = $(".input").val();
 	     
-	        for (var i = 1; i <= inputNumber; i++) {
+	        for (i = 1; i <= inputNumber; i++) {
 	    
 	          if (i % 3 == 0 && i % 5 == 0) {
 	          	$("#result").append(fizzBuzz)
