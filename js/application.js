@@ -3,7 +3,6 @@ $(document).ready(function (){
     var fizz = "<li> FIZZ </li>";
 	var buzz = "<li> BUZZ </li>";
 	var fizzBuzz = "<li>FIZZBUZZ</li>";
-	var noFizzBuzz = "<li>" + i + "</li>";
     
     var fizzbuzz = function (inputNumber){
 	     
@@ -20,7 +19,8 @@ $(document).ready(function (){
 	          else if (i % 5 == 0) {
 	          	$("#result").append(buzz)
 	          }
-	          else {$("#result").append(noFizzBuzz)
+	          else {
+	          	$("#result").append("<li>" + i + "</li>")
 	          };
 	                          
 	        };
